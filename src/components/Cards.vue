@@ -7,7 +7,9 @@
         v-bind:key="index"
       >
         <div class="card col-12 p-0 my-1">
-          <img :src="card" class="card-img-top" alt="..." />
+          <div class="col-12 p-0 card-img-container">
+            <img :src="card" class="card-img-top" alt="..." />
+          </div>
           <div class="card-body">
             <a href="#" class="btn btn-primary mx-auto">View More</a>
           </div>
@@ -39,4 +41,11 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.card-img-container {
+  height: 200px;
+}
+.card-img-top {
+  width: 100%;
+}
+</style>
